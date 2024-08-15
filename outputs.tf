@@ -544,9 +544,3 @@ output "name" {
   description = "The name of the VPC specified as argument to this module"
   value       = var.name
 }
-
-output "db_sg_id" {
-  description = "RDS Security Group ID"
-  value       = aws_security_group.db_sg.id
-  # value = aws_security_group.db_sg[*].id
-}
